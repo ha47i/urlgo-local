@@ -2,7 +2,7 @@
 ---
 
 edit
-./edit.html
+./edit
 
 mm
 https://github.com/
