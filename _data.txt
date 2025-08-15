@@ -1,11 +1,22 @@
-概述
+先写关键词，
+下一行写URL。
+每条间最好空一行。
 ---
 
-edit
+Edit
 ./edit
 
-mm
-https://github.com/
+py
+https://m.bilibili.com/video/BV1Sz4y1U77N
 
-nn
-https://www.jianshu.com/p/a0c7d0482415
+Python
+https://m.bilibili.com/video/BV1Sz4y1U77N
+
+Home
+https://luckyy.qzz.io/
+
+Blog
+https://cblog.luckyy.qzz.io/
+
+GitHub
+https://github.com/
