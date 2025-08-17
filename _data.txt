@@ -29,3 +29,6 @@ https://mcpedl.com/
 
 mc
 https://bbk.endyun.ltd/main
+
+DeepSeek
+https://chat.deepseek.com/
