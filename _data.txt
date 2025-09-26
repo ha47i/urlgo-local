@@ -42,6 +42,7 @@ https://chat.deepseek.com/
 
 zhpj
 https://zhsz.jse.edu.cn/uids/index.jsp
+:文件输入files
 
 files
 https://pan.moe/s/22zqHE
