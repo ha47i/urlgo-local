@@ -6,7 +6,6 @@
 
 Edit
 ./edit
-：即将进入编辑页
 
 OLD
 ./old
@@ -40,10 +39,3 @@ https://mcpedl.com/
 DeepSeek
 https://chat.deepseek.com/
 
-zhpj
-https://zhsz.jse.edu.cn/uids/index.jsp
-:文件输入files
-
-files
-https://pan.moe/s/22zqHE
-：密码zhpj
