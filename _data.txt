@@ -35,7 +35,8 @@ https://pan.moe/
 mcpedl
 https://mcpedl.com/
 
-
 DeepSeek
 https://chat.deepseek.com/
 
+ds
+https://chat.deepseek.com/
