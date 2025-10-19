@@ -40,3 +40,6 @@ https://chat.deepseek.com/
 
 ds
 https://chat.deepseek.com/
+
+db
+https://www.doubao.com/chat
