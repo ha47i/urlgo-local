@@ -1,23 +1,12 @@
-// ============================================
-// URL Go - 配置文件
-// ============================================
+// --- 配置 ---
+const data_file = '_data.txt'; // 指定数据文件路径
+const open_newtab = true; // true: 新标签页打开, false: 当前页跳转
+const case_sensitive = false; // 是否区分大小写
+let goafternote = false; // 控制是否在提示后跳转
+const enable_exceptional_case = true; // 否启用特殊情况处理
 
-const config = {
-    // 数据文件路径
-    data_file: '_data.txt',
-    
-    // true: 新标签页打开，false: 当前页跳转
-    open_newtab: true,
-    
-    // 是否区分大小写
-    case_sensitive: false,
-    
-    // 是否启用特殊情况处理（如 BV 号）
-    enable_exceptional_case: true,
-    
-    // 特殊情况的正则表达式模式
-    exceptionalPatterns: [
-        /^BV[1-9A-Za-z]{10}$/,  // B 站 BV 号
-        // 可以继续添加其他特殊模式
-    ]
-};
+// 特殊情况的正则表达式（可以在这里添加更多）
+const exceptionalPatterns = [
+    /^BV[1-9A-Za-z]{10}$/,  // B站BV号
+    // 可以继续添加其他特殊模式
+];
