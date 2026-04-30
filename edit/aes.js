@@ -1,1 +1,272 @@
-const _0x4867d6=_0x2851;(function(_0x302169,_0x46dcbf){const _0x1dc1c7=_0x2851,_0x42e74f=_0x302169();while(!![]){try{const _0x502400=parseInt(_0x1dc1c7(0x194))/0x1*(parseInt(_0x1dc1c7(0x15a))/0x2)+-parseInt(_0x1dc1c7(0x190))/0x3*(parseInt(_0x1dc1c7(0x184))/0x4)+parseInt(_0x1dc1c7(0x198))/0x5*(parseInt(_0x1dc1c7(0x193))/0x6)+parseInt(_0x1dc1c7(0x171))/0x7+-parseInt(_0x1dc1c7(0x17d))/0x8+parseInt(_0x1dc1c7(0x18e))/0x9+-parseInt(_0x1dc1c7(0x17c))/0xa;if(_0x502400===_0x46dcbf)break;else _0x42e74f['push'](_0x42e74f['shift']());}catch(_0x5da4ce){_0x42e74f['push'](_0x42e74f['shift']());}}}(_0x52ce,0x6c7fb));async function aesEncrypt(_0x2cf599,_0x246158){const _0x10b4a8=_0x2851;try{const _0x52e8e4=await getKeyBuffer(_0x246158),_0x1547a0=await window[_0x10b4a8(0x18b)]['subtle'][_0x10b4a8(0x16e)](_0x10b4a8(0x170),_0x52e8e4,{'name':'AES-GCM'},![],['encrypt']),_0x9487a9=new TextEncoder(),_0x169c43=_0x9487a9['encode'](_0x2cf599),_0x5d775c=window[_0x10b4a8(0x18b)][_0x10b4a8(0x185)](new Uint8Array(0xc)),_0xde282b=await window['crypto'][_0x10b4a8(0x163)][_0x10b4a8(0x180)]({'name':_0x10b4a8(0x191),'iv':_0x5d775c,'tagLength':0x80},_0x1547a0,_0x169c43),_0x2c8028=new Uint8Array(_0x5d775c[_0x10b4a8(0x176)]+_0xde282b[_0x10b4a8(0x164)]);return _0x2c8028[_0x10b4a8(0x181)](_0x5d775c,0x0),_0x2c8028['set'](new Uint8Array(_0xde282b),_0x5d775c['length']),arrayBufferToBase64(_0x2c8028);}catch(_0x22d711){throw new Error(_0x10b4a8(0x178)+_0x22d711['message']);}}async function aesDecryptInternal(_0x3702fc,_0x41f6de){const _0x23150e=_0x2851;try{const _0x405bc1=base64ToArrayBuffer(_0x3702fc),_0x221aee=_0x405bc1['slice'](0x0,0xc),_0x2b486b=_0x405bc1[_0x23150e(0x192)](0xc),_0x65dbe4=await getKeyBuffer(_0x41f6de),_0x5d8b0f=await window[_0x23150e(0x18b)]['subtle'][_0x23150e(0x16e)](_0x23150e(0x170),_0x65dbe4,{'name':_0x23150e(0x191)},![],[_0x23150e(0x16a)]),_0x429df3=await window[_0x23150e(0x18b)]['subtle'][_0x23150e(0x16a)]({'name':_0x23150e(0x191),'iv':_0x221aee,'tagLength':0x80},_0x5d8b0f,_0x2b486b),_0x3fd313=new TextDecoder();return _0x3fd313[_0x23150e(0x19a)](_0x429df3);}catch(_0x46198a){throw new Error(_0x23150e(0x197));}}async function aesDecryptAPI(_0x57de6c,_0x191e3a){const _0x2aea59=_0x2851;try{const _0x264912=await aesDecryptInternal(_0x57de6c,_0x191e3a);return _0x264912;}catch(_0x1f1d37){alert(_0x2aea59(0x199));throw new Error(_0x2aea59(0x199));}}async function getKeyBuffer(_0x5bf07e){const _0x4d557b=_0x2851,_0x2f742e=new TextEncoder();let _0x5cca6a=_0x2f742e[_0x4d557b(0x17e)](_0x5bf07e);if(_0x5cca6a[_0x4d557b(0x176)]>0x20)_0x5cca6a=_0x5cca6a[_0x4d557b(0x192)](0x0,0x20);else{if(_0x5cca6a[_0x4d557b(0x176)]<0x20){const _0x26aa2c=new Uint8Array(0x20);_0x26aa2c[_0x4d557b(0x181)](_0x5cca6a),_0x5cca6a=_0x26aa2c;}}return _0x5cca6a;}function arrayBufferToBase64(_0x4d5972){const _0x18e2e9=_0x2851,_0x5b1108=new Uint8Array(_0x4d5972);let _0x5ee5e7='';for(let _0x376d4d=0x0;_0x376d4d<_0x5b1108[_0x18e2e9(0x164)];_0x376d4d++){_0x5ee5e7+=String[_0x18e2e9(0x168)](_0x5b1108[_0x376d4d]);}return btoa(_0x5ee5e7);}function base64ToArrayBuffer(_0x3e211f){const _0x7f248a=_0x2851,_0x56f98f=atob(_0x3e211f),_0x2f387f=new Uint8Array(_0x56f98f['length']);for(let _0x274c53=0x0;_0x274c53<_0x56f98f[_0x7f248a(0x176)];_0x274c53++){_0x2f387f[_0x274c53]=_0x56f98f[_0x7f248a(0x15d)](_0x274c53);}return _0x2f387f[_0x7f248a(0x18c)];}function _0x2851(_0xf834bd,_0x1b3a18){const _0x52cefc=_0x52ce();return _0x2851=function(_0x285141,_0x2a25f8){_0x285141=_0x285141-0x15a;let _0x4ea289=_0x52cefc[_0x285141];return _0x4ea289;},_0x2851(_0xf834bd,_0x1b3a18);}async function encryptText(){const _0x4eb037=_0x2851,_0xd484f1=document['getElementById']('inputText')['value'],_0x51b6aa=document[_0x4eb037(0x15f)](_0x4eb037(0x16d))[_0x4eb037(0x174)],_0xe20489=document['getElementById'](_0x4eb037(0x175));if(!_0xd484f1){showResult(_0x4eb037(0x162),_0x4eb037(0x15c));return;}if(!_0x51b6aa){showResult(_0x4eb037(0x167),_0x4eb037(0x15c));return;}if(_0x51b6aa[_0x4eb037(0x176)]<0x8){showResult(_0x4eb037(0x186),_0x4eb037(0x15c));return;}try{showResult(_0x4eb037(0x18a),_0x4eb037(0x195));const _0x452f96=await aesEncrypt(_0xd484f1,_0x51b6aa);showResult(_0x4eb037(0x15b)+_0x452f96+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copy-btn\x22\x20onclick=\x22copyToClipboard(\x27'+_0x452f96+'\x27)\x22>复制加密结果</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x4eb037(0x195));}catch(_0x152d29){showResult(_0x152d29[_0x4eb037(0x189)],_0x4eb037(0x15c));}}async function decryptText(){const _0x441963=_0x2851,_0x432518=document['getElementById'](_0x441963(0x182))[_0x441963(0x174)],_0x3eb36b=document[_0x441963(0x15f)](_0x441963(0x16d))['value'],_0x32321a=document[_0x441963(0x15f)]('result');if(!_0x432518){showResult(_0x441963(0x160),_0x441963(0x15c));return;}if(!_0x3eb36b){showResult(_0x441963(0x167),'error');return;}if(_0x3eb36b[_0x441963(0x176)]<0x8){showResult(_0x441963(0x186),'error');return;}try{showResult(_0x441963(0x188),_0x441963(0x195));const _0x1bb468=await aesDecryptAPI(_0x432518,_0x3eb36b);showResult(_0x441963(0x165)+_0x1bb468+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22copy-btn\x22\x20onclick=\x22copyToClipboard(\x27'+_0x1bb468+'\x27)\x22>复制解密结果</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x441963(0x195));}catch(_0x239742){}}function showResult(_0x2c637f,_0xf46d79){const _0x451757=_0x2851,_0x4b7154=document[_0x451757(0x15f)](_0x451757(0x175));_0x4b7154[_0x451757(0x16c)]=_0x451757(0x161)+_0xf46d79+_0x451757(0x183)+(_0xf46d79===_0x451757(0x15c)?_0x451757(0x166):_0x451757(0x177))+_0x451757(0x15e)+_0x2c637f+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20';}function _0x52ce(){const _0x181816=['\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-bottom:\x2010px;\x22><strong>解密成功！</strong></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-family:\x20monospace;\x20word-break:\x20break-all;\x20white-space:\x20pre-wrap;\x22>','❌\x20错误','请输入密钥！','fromCharCode','keypress','decrypt','addEventListener','innerHTML','keyInput','importKey','已复制到剪贴板！','raw','1490314unpnOG','body','appendChild','value','result','length','✅\x20结果','加密失败:\x20','key','select','catch','3339640nPrmfI','5179432vTespo','encode','clipboard','encrypt','set','inputText','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-title\x22>','408OUHeQs','getRandomValues','密钥长度至少需要8位！','Enter','解密中...','message','加密中...','crypto','buffer','aesDecryptAPI','7968168TmTvyk','writeText','11577BKIPRz','AES-GCM','slice','12MNaUfJ','2382LcFwBX','success','then','解密失败','873940gfteyV','密钥错误','decode','312CNHzaV','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-bottom:\x2010px;\x22><strong>加密成功！</strong></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-family:\x20monospace;\x20word-break:\x20break-all;\x20white-space:\x20pre-wrap;\x22>','error','charCodeAt','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>','getElementById','请输入需要解密的文本！','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result\x20','请输入需要加密的文本！','subtle','byteLength'];_0x52ce=function(){return _0x181816;};return _0x52ce();}function clearAll(){const _0xe2472a=_0x2851;document['getElementById']('inputText')[_0xe2472a(0x174)]='',document[_0xe2472a(0x15f)](_0xe2472a(0x16d))[_0xe2472a(0x174)]='',document[_0xe2472a(0x15f)](_0xe2472a(0x175))[_0xe2472a(0x16c)]='';}function copyToClipboard(_0x5d02a1){const _0x1dc594=_0x2851;navigator[_0x1dc594(0x17f)][_0x1dc594(0x18f)](_0x5d02a1)[_0x1dc594(0x196)](function(){const _0x453b4a=_0x1dc594;alert(_0x453b4a(0x16f));})[_0x1dc594(0x17b)](function(_0x26cd82){const _0x54fdfe=_0x1dc594;try{const _0x3f0210=document['createElement']('textarea');_0x3f0210['value']=_0x5d02a1,document[_0x54fdfe(0x172)][_0x54fdfe(0x173)](_0x3f0210),_0x3f0210[_0x54fdfe(0x17a)](),document['execCommand']('copy'),document[_0x54fdfe(0x172)]['removeChild'](_0x3f0210),alert(_0x54fdfe(0x16f));}catch(_0x4338aa){alert('复制失败，请手动复制！');}});}document[_0x4867d6(0x15f)](_0x4867d6(0x16d))[_0x4867d6(0x16b)](_0x4867d6(0x169),function(_0x1c53c5){const _0x31db27=_0x4867d6;_0x1c53c5[_0x31db27(0x179)]===_0x31db27(0x187)&&(document[_0x31db27(0x15f)](_0x31db27(0x182))[_0x31db27(0x174)]['includes']('\x0a')?decryptText():encryptText());}),window[_0x4867d6(0x18d)]=aesDecryptAPI;
+// ============================================
+// AES 加密/解密工具
+// ============================================
+
+/**
+ * AES-GCM 加密
+ * @param {string} text - 要加密的文本
+ * @param {string} password - 密码
+ * @returns {Promise<string>} Base64 编码的加密结果
+ */
+async function aesEncrypt(text, password) {
+    try {
+        const keyBuffer = await getKeyBuffer(password);
+        const key = await window.crypto.subtle.importKey(
+            'raw',
+            keyBuffer,
+            { name: 'AES-GCM' },
+            false,
+            ['encrypt']
+        );
+
+        const encoder = new TextEncoder();
+        const data = encoder.encode(text);
+        const iv = window.crypto.getRandomValues(new Uint8Array(12));
+
+        const encrypted = await window.crypto.subtle.encrypt(
+            { name: 'AES-GCM', iv: iv, tagLength: 128 },
+            key,
+            data
+        );
+
+        const result = new Uint8Array(iv.length + encrypted.byteLength);
+        result.set(iv, 0);
+        result.set(new Uint8Array(encrypted), iv.length);
+
+        return arrayBufferToBase64(result);
+    } catch (error) {
+        throw new Error('加密失败：' + error.message);
+    }
+}
+
+/**
+ * AES-GCM 解密（内部实现）
+ * @param {string} base64Data - Base64 编码的加密数据
+ * @param {string} password - 密码
+ * @returns {Promise<string>} 解密后的文本
+ */
+async function aesDecryptInternal(base64Data, password) {
+    try {
+        const data = base64ToArrayBuffer(base64Data);
+        const iv = data.slice(0, 12);
+        const encrypted = data.slice(12);
+
+        const keyBuffer = await getKeyBuffer(password);
+        const key = await window.crypto.subtle.importKey(
+            'raw',
+            keyBuffer,
+            { name: 'AES-GCM' },
+            false,
+            ['decrypt']
+        );
+
+        const decrypted = await window.crypto.subtle.decrypt(
+            { name: 'AES-GCM', iv: iv, tagLength: 128 },
+            key,
+            encrypted
+        );
+
+        const decoder = new TextDecoder();
+        return decoder.decode(decrypted);
+    } catch (error) {
+        throw new Error('解密失败');
+    }
+}
+
+/**
+ * AES-GCM 解密（API 接口，带错误提示）
+ * @param {string} base64Data - Base64 编码的加密数据
+ * @param {string} password - 密码
+ * @returns {Promise<string>} 解密后的文本
+ */
+async function aesDecryptAPI(base64Data, password) {
+    try {
+        return await aesDecryptInternal(base64Data, password);
+    } catch (error) {
+        alert('密钥错误');
+        throw new Error('密钥错误');
+    }
+}
+
+/**
+ * 获取密钥缓冲区（固定 32 字节）
+ * @param {string} password - 密码
+ * @returns {Uint8Array} 密钥缓冲区
+ */
+function getKeyBuffer(password) {
+    const encoder = new TextEncoder();
+    let keyBuffer = encoder.encode(password);
+
+    if (keyBuffer.length > 32) {
+        keyBuffer = keyBuffer.slice(0, 32);
+    } else if (keyBuffer.length < 32) {
+        const padded = new Uint8Array(32);
+        padded.set(keyBuffer);
+        keyBuffer = padded;
+    }
+
+    return keyBuffer;
+}
+
+/**
+ * ArrayBuffer 转 Base64
+ * @param {ArrayBuffer} buffer - ArrayBuffer
+ * @returns {string} Base64 字符串
+ */
+function arrayBufferToBase64(buffer) {
+    const bytes = new Uint8Array(buffer);
+    let binary = '';
+    for (let i = 0; i < bytes.byteLength; i++) {
+        binary += String.fromCharCode(bytes[i]);
+    }
+    return btoa(binary);
+}
+
+/**
+ * Base64 转 ArrayBuffer
+ * @param {string} base64 - Base64 字符串
+ * @returns {Uint8Array} Uint8Array
+ */
+function base64ToArrayBuffer(base64) {
+    const binary = atob(base64);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+        bytes[i] = binary.charCodeAt(i);
+    }
+    return bytes.buffer;
+}
+
+/**
+ * 加密文本（UI 调用）
+ */
+async function encryptText() {
+    const inputText = document.getElementById('inputText').value;
+    const keyInput = document.getElementById('keyInput').value;
+    const resultDiv = document.getElementById('result');
+
+    if (!inputText) {
+        showResult('请输入需要加密的文本！', 'error');
+        return;
+    }
+
+    if (!keyInput) {
+        showResult('请输入密钥！', 'error');
+        return;
+    }
+
+    if (keyInput.length < 8) {
+        showResult('密钥长度至少需要 8 位！', 'error');
+        return;
+    }
+
+    try {
+        showResult('加密中...', 'success');
+        const encrypted = await aesEncrypt(inputText, keyInput);
+        showResult(`
+            <div style="margin-bottom: 10px;"><strong>加密成功！</strong></div>
+            <div style="font-family: monospace; word-break: break-all; white-space: pre-wrap;">${encrypted}</div>
+            <button class="copy-btn" onclick="copyToClipboard('${encrypted}')">复制加密结果</button>
+        `, 'success');
+    } catch (error) {
+        showResult(error.message, 'error');
+    }
+}
+
+/**
+ * 解密文本（UI 调用）
+ */
+async function decryptText() {
+    const inputText = document.getElementById('inputText').value;
+    const keyInput = document.getElementById('keyInput').value;
+    const resultDiv = document.getElementById('result');
+
+    if (!inputText) {
+        showResult('请输入需要解密的文本！', 'error');
+        return;
+    }
+
+    if (!keyInput) {
+        showResult('请输入密钥！', 'error');
+        return;
+    }
+
+    if (keyInput.length < 8) {
+        showResult('密钥长度至少需要 8 位！', 'error');
+        return;
+    }
+
+    try {
+        showResult('解密中...', 'success');
+        const decrypted = await aesDecryptAPI(inputText, keyInput);
+        showResult(`
+            <div style="margin-bottom: 10px;"><strong>解密成功！</strong></div>
+            <div style="font-family: monospace; word-break: break-all; white-space: pre-wrap;">${decrypted}</div>
+            <button class="copy-btn" onclick="copyToClipboard('${decrypted}')">复制解密结果</button>
+        `, 'success');
+    } catch (error) {
+        // 错误已在 aesDecryptAPI 中处理
+    }
+}
+
+/**
+ * 显示结果
+ * @param {string} message - 消息内容
+ * @param {string} type - 类型（success/error）
+ */
+function showResult(message, type) {
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `
+        <div class="result ${type}">
+            ${message}
+        </div>
+    `;
+}
+
+/**
+ * 清空所有输入
+ */
+function clearAll() {
+    document.getElementById('inputText').value = '';
+    document.getElementById('keyInput').value = '';
+    document.getElementById('result').innerHTML = '';
+}
+
+/**
+ * 复制到剪贴板
+ * @param {string} text - 要复制的文本
+ */
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            alert('已复制到剪贴板！');
+        })
+        .catch(() => {
+            // 降级方案
+            try {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert('已复制到剪贴板！');
+            } catch (error) {
+                alert('复制失败，请手动复制！');
+            }
+        });
+}
+
+// 监听回车键
+document.getElementById('keyInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        const inputText = document.getElementById('inputText').value;
+        if (inputText.includes('\n')) {
+            decryptText();
+        } else {
+            encryptText();
+        }
+    }
+});
+
+// 导出 API 供外部使用
+window.aesDecryptAPI = aesDecryptAPI;

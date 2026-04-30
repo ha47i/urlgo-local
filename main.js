@@ -1,1 +1,272 @@
-const _0x19e1cf=_0x2801;(function(_0x264860,_0x284eb4){const _0x1e62a7=_0x2801,_0x534e3c=_0x264860();while(!![]){try{const _0x432adc=parseInt(_0x1e62a7(0x13e))/0x1+-parseInt(_0x1e62a7(0x130))/0x2*(parseInt(_0x1e62a7(0x119))/0x3)+parseInt(_0x1e62a7(0x140))/0x4*(parseInt(_0x1e62a7(0x13d))/0x5)+-parseInt(_0x1e62a7(0x11a))/0x6*(-parseInt(_0x1e62a7(0x133))/0x7)+parseInt(_0x1e62a7(0x120))/0x8*(parseInt(_0x1e62a7(0x12d))/0x9)+-parseInt(_0x1e62a7(0x122))/0xa+parseInt(_0x1e62a7(0x114))/0xb;if(_0x432adc===_0x284eb4)break;else _0x534e3c['push'](_0x534e3c['shift']());}catch(_0x3c8a5b){_0x534e3c['push'](_0x534e3c['shift']());}}}(_0x23ad,0x3dfcc));const form=document[_0x19e1cf(0x146)](_0x19e1cf(0x149)),input=document[_0x19e1cf(0x146)]('keywordInput'),logtext=document['getElementById'](_0x19e1cf(0x13b)),note=document[_0x19e1cf(0x146)](_0x19e1cf(0x126)),detail=document[_0x19e1cf(0x146)](_0x19e1cf(0x118)),detailcontext=document[_0x19e1cf(0x146)](_0x19e1cf(0x112));let keywordMap={},matchedUrl=null;window['onload']=function(){const _0x310a7d=_0x19e1cf,_0xa250de=new URLSearchParams(window['location'][_0x310a7d(0x123)]),_0x1d7363=_0xa250de[_0x310a7d(0x139)]('go');_0x1d7363&&(input['value']=_0x1d7363);};function Log(_0x3138a3){const _0x14a221=_0x19e1cf;logtext[_0x14a221(0x11b)]=_0x3138a3;}function _0x2801(_0x32e5b1,_0x3c7462){const _0x23ad8b=_0x23ad();return _0x2801=function(_0x2801dd,_0x46a137){_0x2801dd=_0x2801dd-0x111;let _0x1abe95=_0x23ad8b[_0x2801dd];return _0x1abe95;},_0x2801(_0x32e5b1,_0x3c7462);}function Note(_0x18c373){note['innerText']=_0x18c373;}function openInNewTab(_0x9fde8e){const _0x781744=_0x19e1cf;Object[_0x781744(0x111)](document[_0x781744(0x121)]('a'),{'target':_0x781744(0x135),'rel':'noopener\x20noreferrer','href':_0x9fde8e})['click']();}function doRedirect(){const _0x51e8e2=_0x19e1cf;Log(_0x51e8e2(0x142)),open_newtab?openInNewTab(matchedUrl):window[_0x51e8e2(0x141)][_0x51e8e2(0x13c)]=matchedUrl;}function loadData(){const _0x19eb79=_0x19e1cf;Log(_0x19eb79(0x11e)),fetch(data_file)[_0x19eb79(0x131)](_0x4e7033=>{const _0xee270f=_0x19eb79;if(!_0x4e7033['ok'])throw new Error(_0xee270f(0x124)+_0x4e7033[_0xee270f(0x138)]+'\x20'+_0x4e7033[_0xee270f(0x125)]);return _0x4e7033[_0xee270f(0x11f)]();})[_0x19eb79(0x131)](_0x2beef3=>{const _0x3ae068=_0x19eb79,_0x1e8ba2=_0x2beef3[_0x3ae068(0x13f)]('\x0a')[_0x3ae068(0x14a)](_0x1ae0cf=>_0x1ae0cf[_0x3ae068(0x137)]()),_0x25f46c=_0x1e8ba2['indexOf'](_0x3ae068(0x13a));if(_0x25f46c===-0x1)throw new Error('数据文件格式有误');const _0x7f6e1f=_0x1e8ba2['slice'](_0x25f46c+0x1);let _0x3783c9=0x0;while(_0x3783c9<_0x7f6e1f[_0x3ae068(0x113)]){const _0x45620e=_0x7f6e1f[_0x3783c9];if(!_0x45620e){_0x3783c9++;continue;}const _0x3cb325=_0x7f6e1f[_0x3783c9+0x1];if(_0x45620e&&_0x3cb325){let _0x543d39=null;if(_0x3783c9+0x2<_0x7f6e1f[_0x3ae068(0x113)]){const _0x1a946a=_0x7f6e1f[_0x3783c9+0x2];(_0x1a946a[_0x3ae068(0x132)](':')||_0x1a946a[_0x3ae068(0x132)]('：'))&&(_0x543d39=_0x1a946a['substring'](0x1)['trim']()||null);}keywordMap[_0x45620e]={'url':_0x3cb325,'tip':_0x543d39},_0x3783c9+=_0x543d39!==null?0x3:0x2;}else _0x3783c9++;}Log(_0x3ae068(0x115));})[_0x19eb79(0x143)](_0x54249d=>{const _0x2e57e7=_0x19eb79;Log(_0x2e57e7(0x12e)+(_0x54249d[_0x2e57e7(0x129)]||_0x2e57e7(0x11d)));});}document[_0x19e1cf(0x127)](_0x19e1cf(0x148),loadData);function _0x23ad(){const _0x14d6d3=['replace','_blank','toLowerCase','trim','status','get','---','logtext','href','1092815fjbwIh','149596JieWkU','split','4zUlvZi','location','已尝试打开链接!','catch','tip','preventDefault','getElementById','innerHTML','DOMContentLoaded','jumpForm','map','assign','detailcontext','length','392271HdyRBc','数据加载完成','submit','无匹配','detail','9pgRDaB','17046VJeEwE','innerText','请读后再次提交','读取数据失败','正在加载数据...','text','8FeALjl','createElement','4073170KVvzuu','search','无法加载数据文件:\x20','statusText','note','addEventListener','请输入关键词','message','无备注','some','url','3761343JhLiQK','错误：','test','175204keVbTx','then','startsWith','252eKWeoA'];_0x23ad=function(){return _0x14d6d3;};return _0x23ad();}function processInput(_0xc78d90){const _0x4a5c8b=_0x19e1cf;let _0x4d99fe=null;if(case_sensitive)_0x4d99fe=keywordMap[_0xc78d90];else{if(enable_exceptional_case){let _0x1b5b1b=exceptionalPatterns[_0x4a5c8b(0x12b)](_0x481b7c=>_0x481b7c[_0x4a5c8b(0x12f)](_0xc78d90));if(_0x1b5b1b)_0x4d99fe=keywordMap[_0xc78d90];else for(const _0x495b6e in keywordMap){if(_0x495b6e['toLowerCase']()===_0xc78d90['toLowerCase']()){_0x4d99fe=keywordMap[_0x495b6e];break;}}}else for(const _0x4832a0 in keywordMap){if(_0x4832a0[_0x4a5c8b(0x136)]()===_0xc78d90[_0x4a5c8b(0x136)]()){_0x4d99fe=keywordMap[_0x4832a0];break;}}}if(!_0x4d99fe||!_0x4d99fe[_0x4a5c8b(0x12c)]){Log(_0x4a5c8b(0x117)+_0xc78d90+'的项'),Note(_0x4a5c8b(0x12a));return;}matchedUrl=_0x4d99fe[_0x4a5c8b(0x12c)];const _0x4ef832=_0x4d99fe[_0x4a5c8b(0x144)];_0x4ef832?(Note(''+_0x4ef832),Log(_0x4a5c8b(0x11c)),goafternote=!![]):(Note(_0x4a5c8b(0x12a)),doRedirect());}function start(){const _0x463d70=_0x19e1cf;if(!goafternote){const _0x1aba4d=input['value'][_0x463d70(0x137)]();if(!_0x1aba4d){Log(_0x463d70(0x128));return;}processInput(_0x1aba4d);}else doRedirect(),goafternote=![];}form[_0x19e1cf(0x127)](_0x19e1cf(0x116),function(_0x3df6ba){const _0x49e2e5=_0x19e1cf;_0x3df6ba[_0x49e2e5(0x145)](),start();}),detail[_0x19e1cf(0x127)]('click',function(){const _0x263dd0=_0x19e1cf;var _0xa6a99=detailcontext[_0x263dd0(0x147)],_0x55a38a=_0xa6a99[_0x263dd0(0x134)](/<br\s*\/?>/gi,'\x0a');alert(_0x55a38a);});
+// ============================================
+// URL Go - 主程序
+// ============================================
+
+// DOM 元素引用
+const elements = {
+    form: null,
+    input: null,
+    logText: null,
+    note: null,
+    detail: null,
+    detailContext: null
+};
+
+// 状态管理
+const state = {
+    keywordMap: {},
+    matchedUrl: null,
+    goAfterNote: false
+};
+
+/**
+ * 初始化 DOM 元素引用
+ */
+function initElements() {
+    elements.form = document.getElementById('jumpForm');
+    elements.input = document.getElementById('keywordInput');
+    elements.logText = document.getElementById('logtext');
+    elements.note = document.getElementById('note');
+    elements.detail = document.getElementById('detail');
+    elements.detailContext = document.getElementById('detailcontext');
+}
+
+/**
+ * 日志输出
+ * @param {string} message - 日志消息
+ */
+function log(message) {
+    elements.logText.textContent = message;
+}
+
+/**
+ * 显示备注信息
+ * @param {string} message - 备注消息
+ */
+function showNote(message) {
+    elements.note.innerText = message;
+}
+
+/**
+ * 在新标签页打开链接
+ * @param {string} url - 要打开的 URL
+ */
+function openInNewTab(url) {
+    const link = Object.assign(document.createElement('a'), {
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        href: url
+    });
+    link.click();
+}
+
+/**
+ * 执行跳转
+ */
+function doRedirect() {
+    log('已尝试打开链接!');
+    if (config.open_newtab) {
+        openInNewTab(state.matchedUrl);
+    } else {
+        window.location.assign(state.matchedUrl);
+    }
+}
+
+/**
+ * 解析数据文件
+ * @param {string} content - 文件内容
+ * @returns {Object} 关键词映射对象
+ */
+function parseDataFile(content) {
+    const lines = content.split('\n').map(line => line.trim());
+    const separatorIndex = lines.indexOf('---');
+    
+    if (separatorIndex === -1) {
+        throw new Error('数据文件格式有误：未找到分隔符 "---"');
+    }
+
+    const dataLines = lines.slice(separatorIndex + 1);
+    const keywordMap = {};
+    let i = 0;
+
+    while (i < dataLines.length) {
+        const keyword = dataLines[i];
+        
+        // 跳过空行
+        if (!keyword) {
+            i++;
+            continue;
+        }
+
+        const url = dataLines[i + 1];
+        
+        // 确保有关键词和 URL
+        if (keyword && url) {
+            let tip = null;
+            
+            // 检查是否有备注信息（第三行以 : 或：开头）
+            if (i + 2 < dataLines.length) {
+                const thirdLine = dataLines[i + 2];
+                if (thirdLine.startsWith(':') || thirdLine.startsWith(':')) {
+                    tip = thirdLine.substring(1).trim() || null;
+                }
+            }
+
+            keywordMap[keyword] = { url, tip };
+            i += tip !== null ? 3 : 2;
+        } else {
+            i++;
+        }
+    }
+
+    return keywordMap;
+}
+
+/**
+ * 加载数据文件
+ */
+async function loadData() {
+    log('正在加载数据...');
+    
+    try {
+        const response = await fetch(config.data_file);
+        
+        if (!response.ok) {
+            throw new Error(`HTTP 错误：${response.status} ${response.statusText}`);
+        }
+
+        const content = await response.text();
+        state.keywordMap = parseDataFile(content);
+        log('数据加载完成');
+        
+    } catch (error) {
+        log(`读取数据失败：${error.message || '未知错误'}`);
+        console.error('数据加载错误:', error);
+    }
+}
+
+/**
+ * 处理输入并匹配关键词
+ * @param {string} input - 用户输入
+ */
+function processInput(input) {
+    let matchedEntry = null;
+
+    if (config.case_sensitive) {
+        // 区分大小写：直接查找
+        matchedEntry = state.keywordMap[input];
+    } else {
+        // 不区分大小写
+        if (config.enable_exceptional_case) {
+            // 检查特殊情况（如 BV 号）
+            const hasExceptionalPattern = config.exceptionalPatterns.some(
+                pattern => pattern.test(input)
+            );
+            
+            if (hasExceptionalPattern) {
+                matchedEntry = state.keywordMap[input];
+            } else {
+                // 忽略大小写查找
+                const lowerInput = input.toLowerCase();
+                for (const [key, value] of Object.entries(state.keywordMap)) {
+                    if (key.toLowerCase() === lowerInput) {
+                        matchedEntry = value;
+                        break;
+                    }
+                }
+            }
+        } else {
+            // 简单的不区分大小写查找
+            const lowerInput = input.toLowerCase();
+            for (const [key, value] of Object.entries(state.keywordMap)) {
+                if (key.toLowerCase() === lowerInput) {
+                    matchedEntry = value;
+                    break;
+                }
+            }
+        }
+    }
+
+    // 未找到匹配项
+    if (!matchedEntry || !matchedEntry.url) {
+        log(`未找到"${input}"的项`);
+        showNote('无匹配');
+        return;
+    }
+
+    state.matchedUrl = matchedEntry.url;
+    const tip = matchedEntry.tip;
+
+    if (tip) {
+        showNote(tip);
+        log('请读后再次提交');
+        state.goAfterNote = true;
+    } else {
+        showNote('无备注');
+        doRedirect();
+    }
+}
+
+/**
+ * 处理表单提交
+ */
+function handleSubmit() {
+    if (!state.goAfterNote) {
+        const inputValue = elements.input.value.trim();
+        
+        if (!inputValue) {
+            log('请输入关键词');
+            return;
+        }
+        
+        processInput(inputValue);
+    } else {
+        doRedirect();
+        state.goAfterNote = false;
+    }
+}
+
+/**
+ * 显示详情
+ */
+function showDetail() {
+    const context = elements.detailContext.innerHTML;
+    const textContent = context.replace(/<br\s*\/?>/gi, '\n');
+    alert(textContent);
+}
+
+/**
+ * 从 URL 参数自动填充
+ */
+function autoFillFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    const goParam = params.get('go');
+    
+    if (goParam) {
+        elements.input.value = goParam;
+    }
+}
+
+/**
+ * 初始化事件监听
+ */
+function initEventListeners() {
+    // 表单提交
+    elements.form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        handleSubmit();
+    });
+
+    // 详情页按钮
+    elements.detail.addEventListener('click', showDetail);
+
+    // 页面加载时初始化
+    document.addEventListener('DOMContentLoaded', () => {
+        initElements();
+        autoFillFromURL();
+        loadData();
+    });
+}
+
+// 启动应用
+initEventListeners();
